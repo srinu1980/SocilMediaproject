@@ -1,0 +1,39 @@
+<div class="body-profile">
+  <div class="container container-custom-1">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="custom-main-title">Your profile</h2>
+      </div>
+    </div>
+
+    <div class="row user-data">
+      <div class="col-12 text-center user-data">
+        <h3 class="user-username">
+          <span class="bl"><</span>
+          {{tatalor}}
+          <span class="br">></span>
+        </h3>
+        <h2 class="user-other"> {{mail}} </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <h2 class="user-posts-title"> Your posts </h2>
+      </div>
+      <div class="col-4"></div>
+    </div>
+        <div *ngFor="let Mod of posts">
+          <div class="row post">
+            <h3> {{Mod.name}} </h3>
+            <h5 class="post-border">
+              {{Mod.description}}
+            </h5>
+
+            <p class="post-stamp">{{Mod.date}} </p>
+            <button type="button" (click)="delete(Mod.id)" class="btn btn-dark">Delete</button>
+          </div>
+        </div>
+  </div>
+</div>

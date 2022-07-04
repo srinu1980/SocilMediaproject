@@ -1,0 +1,30 @@
+.header {
+  height: 6%;
+  background: #fafafa;
+}
+
+chat-stream {
+  height: 100%;
+}
+
+.chat {
+  height: 94%;
+}
+
+.users {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+.logged-in-user {
+  font-size: 2.5em;
+  padding-top: 0.8em;
+  font-family: "Bookman Old Style";
+}
+.xxx {
+
+  /*background: linear-gradient(to right, #615664, grey);*/
+  background-color: white;
+}
+
+
